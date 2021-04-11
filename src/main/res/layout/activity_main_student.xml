@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainStudent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtSystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="ระบบส่งการบ้านออนไลน์"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:text=" "
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/ShowName"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSystem"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ShowName"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_below="@id/ShowName"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCode"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="รหัสวิชา"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtSubject"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ชื่อวิชา"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtAssignment"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="รับมอบหมาย"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtScoreTotal"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="คะแนน"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtTimeline"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="กำหนดส่ง"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtSendWork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ส่งงาน"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ShowCode01"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/ShowSubject01"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/ShowAssignment01"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/ShowScoreTotal01"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/ShowTimeline01"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btnSendWork01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="left|center"
+                    android:text="ส่งงาน"
+                    android:textSize="10dp"
+                    app:backgroundTint="#4CAF50" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ShowCode02"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/ShowSubject02"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/ShowAssignment02"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/ShowScoreTotal02"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/ShowTimeline02"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btnSendWork02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="left|center"
+                    android:text="ส่งงาน"
+                    android:textSize="10dp"
+                    app:backgroundTint="#4CAF50" />
+
+
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

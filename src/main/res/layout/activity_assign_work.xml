@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssignWork">
+
+    <TextView
+        android:id="@+id/txtAssignWork"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="มอยหมายงาน"/>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/JobName"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:text="ชื่องานที่มอบหมาย :"
+            />
+        <EditText
+            android:id="@+id/edtJobName"
+            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:layout_marginTop="20dp"
+            android:text=""
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtDeadline"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:text="วันกำหนดส่ง "
+            />
+    </TableRow>
+
+    <TableLayout>
+            <TextView
+                android:id="@+id/txtScoreTQF"
+                android:gravity="center_horizontal"
+                android:text="คะแนน TQF"
+                android:textSize="16dp" />
+    </TableLayout>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtScoreTotal"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:text="คะแนนเต็ม"
+        />
+        <EditText
+            android:id="@+id/edtScoreTotal"
+            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:text=""
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtMoral"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:text="คุณธรรม"
+            />
+        <EditText
+            android:id="@+id/edtMoral"
+            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:text=""
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtKnowledge"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:text="ความรู้"
+            />
+        <EditText
+            android:id="@+id/edtKnowledge"
+            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:text=""
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtWit"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:text="ปัญญา"
+            />
+        <EditText
+            android:id="@+id/edtWit"
+            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:text=""
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtRelationship"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:text="ความสัมพันธ์"
+            />
+        <EditText
+            android:id="@+id/edtRelationship"
+            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:text=""
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtAnalysis"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:text="การคิดวิเคราะห์"
+            />
+        <EditText
+            android:id="@+id/edtAnalysis"
+            android:layout_height="wrap_content"
+            android:layout_width="250dp"
+            android:text=""
+            />
+    </TableRow>
+
+    <RelativeLayout>
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="ยืนยัน"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+
+</TableLayout>

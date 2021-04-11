@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="ลงทะเบียน"/>
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRegister"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:text="ชื่อ-นามสกุล :"/>
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRegister"
+        android:layout_toRightOf="@+id/txtName"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/txtSurName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtName"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:text="นามสกุล :"/>
+    <EditText
+        android:id="@+id/edtSruName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtName"
+        android:layout_toRightOf="@id/txtSurName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/txtStudentCode"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSruName"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:text="รหัสนักศึกษา :"/>
+    <EditText
+        android:id="@+id/edtStudentCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSurName"
+        android:layout_toRightOf="@id/txtStudentCode"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/txtPhoneNumber"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtStudentCode"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:text="เบอร์โทร :"/>
+    <EditText
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtStudentCode"
+        android:layout_toRightOf="@id/txtPhoneNumber"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/txtPassword"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPhoneNumber"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:text="Password :"/>
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPhoneNumber"
+        android:layout_toRightOf="@id/txtPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/txtConPassword"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:text="Confirm Password"/>
+    <EditText
+        android:id="@+id/edtConPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtPassword"
+        android:layout_toRightOf="@id/txtConPassword"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtConPassword"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="18dp"
+        android:text="ยืนยัน"/>
+
+    <Button
+        android:id="@+id/btnUtrun"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtConPassword"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="90dp"
+        android:textSize="18dp"
+        android:text="ย้อนกลับ"/>
+
+</RelativeLayout>
